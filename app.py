@@ -6,4 +6,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template('index.html', utc_dt=datetime.datetime.utcnow())
+	plants = ["Snake Plant", "Peace Lily", "Pothos"]
+	return render_template('index.html', utc_dt=datetime.datetime.utcnow(), plants=plants)
