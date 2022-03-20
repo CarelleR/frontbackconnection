@@ -5,9 +5,13 @@
     <title>FlaskApp</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <h2>Welcome to FlaskApp!</h2>
+    
+    <h1>List plants</h1>
+
+    <ul>
+    	{% for plant in plants %}
+    	<li>{{ plant }}</li>
+    	{% endfor %}
     <h3>{{ utc_dt }}</h3>
-    <p>Testing if updated</p>
 </body>
 </html>
